@@ -1,0 +1,117 @@
+/* TaskCard.css */
+.task-card {
+    max-width: 800px; /* Increase width for better visibility */
+    margin: 20px auto; /* Center the card */
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* Prevent overflow */
+    font-family: Arial, sans-serif;
+}
+
+.task-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px; /* Larger font for the title */
+    color: #333;
+}
+
+.task-input input {
+    width: calc(100% - 40px); /* Adjust input width */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger input text */
+}
+
+.task-input button {
+    width: 100%; /* Full-width button */
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
+}
+
+.task-card-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.task {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.task p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.task .status {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* For better responsiveness */
+@media (max-width: 768px) {
+    .task-card {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 20px;
+    }
+
+    .task-input input, 
+    .task-input button {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .task h3 {
+        font-size: 18px; /* Adjust title size */
+    }
+
+    .task p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
+
+.filter-dropdown {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-dropdown select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-dropdown select:focus {
+    outline: none;
+    border-color: #007bff;
+}
